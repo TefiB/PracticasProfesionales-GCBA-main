@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/editarperfil.css">
+    
+    <!--Icon-Font-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" ></script>
+    <!--Stylesheet que mejora lo visual-->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
+<body>
+
+  <header>
+        <ul class="menu">
+           
+            <a href="./menu.html"><img src="images/logos_BA_degrade_VamosBuenosAires_500px_ancho-01.png" alt="BA" id="soyElLogo"/></a>
+
+            <li id="menu-flotante">
+                <a href="#">Incidencia</a>
+                <ul class="menu-vertical">
+					<li><a href="./subirincidencia.html">Subir Incidencia</a></li>
+					<li><a href="#">Ver Incidencias</a></li>
+					<li><a href="#">Estadisticas</a></li>
+				</ul>
+            </li> 
+			<li id="menu-flotante">
+                <a href="#">Titulos</a>
+                <ul class="menu-vertical">
+					<li><a href="./subirtitulos.html">Subir Titulos</a></li>
+					<li><a href="#">Ver Titulos</a></li>
+				</ul>
+            </li> 
+
+			<li><a href="#">Servicios</a></li>
+			<li><a href="#">Acerca De</a></li>
+            <li id="menu-flotante">
+                <a href="#">Admin/User</a>
+                <ul class="menu-vertical">
+					<li><a href="./editarperfil.html" id="editar-perfil">Editar Perfil</a></li>
+					<li><a href="#">Configuración</a></li>
+					<li><a href="#">Salir</a></li>
+				</ul>
+            
+            </li> 
+        </ul>   
+    </header>  
+    
+    
+    <div class="wrapper">
+      <div class="profile">
+        <div class="content">
+          <h1>Editar perfil</h1>
+          <form action="">
+            <!-- Photo -->
+            <fieldset>
+              <div class="grid-35">
+                <label for="avatar">Foto de perfil</label>
+              </div>
+              <div class="grid-65">
+                <span class="photo" title="Foto de perfil"></span>
+                <input type="file" class="btn" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="grid-35">
+                <label for="fname">Nombre de usuario</label>
+              </div>
+              <div class="grid-65">
+                <input type="text" id="fname"/>
+              </div>
+            </fieldset>
+            
+            <!-- Email -->
+            <fieldset>
+              <div class="grid-35">
+                <label for="email">Correo electronico</label>
+              </div>
+              <div class="grid-65">
+                <input type="email" id="email"/>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <div class="grid-35">
+                <label for="password">Contraseña actual</label>
+              </div>
+              <div class="grid-65">
+                <input type="password" id="password"/>
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="grid-35">
+                <label for="password">Contraseña nueva</label>
+              </div>
+              <div class="grid-65">
+                <input type="password" id="newpassword"/>
+              </div>
+            </fieldset>
+
+
+
+            <fieldset>
+              <input type="button" class="Btn cancel" value="Cancelar" />
+              <input type="submit" class="Btn" value="Guardar cambios" />
+            </fieldset>
+            
+    
+          </form>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
