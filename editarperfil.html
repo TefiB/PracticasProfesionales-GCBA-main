@@ -28,15 +28,7 @@
 					<li><a href="#">Ver Incidencias</a></li>
 					<li><a href="#">Estadisticas</a></li>
 				</ul>
-            </li> 
-			<li id="menu-flotante">
-                <a href="#">Titulos</a>
-                <ul class="menu-vertical">
-					<li><a href="./subirtitulos.html">Subir Titulos</a></li>
-					<li><a href="#">Ver Titulos</a></li>
-				</ul>
-            </li> 
-
+            
 			<li><a href="#">Servicios</a></li>
 			<li><a href="#">Acerca De</a></li>
             <li id="menu-flotante">
@@ -52,68 +44,61 @@
     </header>  
     
     
-    <div class="wrapper">
-      <div class="profile">
-        <div class="content">
-          <h1>Editar perfil</h1>
-          <form action="">
-            <!-- Photo -->
-            <fieldset>
-              <div class="grid-35">
-                <label for="avatar">Foto de perfil</label>
-              </div>
-              <div class="grid-65">
-                <span class="photo" title="Foto de perfil"></span>
-                <input type="file" class="btn" />
-              </div>
-            </fieldset>
-            <fieldset>
-              <div class="grid-35">
-                <label for="fname">Nombre de usuario</label>
-              </div>
-              <div class="grid-65">
-                <input type="text" id="fname"/>
-              </div>
-            </fieldset>
+    <div class="container bootstrap snippets bootdey">
+      
+        <hr>
+    <div class="row">
+        <!-- left column -->
+        <div class="col-md-3">
+          <div class="text-center">
+            <img src="https://www.nicepng.com/png/detail/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png" class="avatar img-circle img-thumbnail" alt="avatar">
             
-            <!-- Email -->
-            <fieldset>
-              <div class="grid-35">
-                <label for="email">Correo electronico</label>
+            <input type="file" class="form-control">
+          </div>
+        </div>
+        
+        <!-- edit form column -->
+        <div class="col-md-9 personal-info">
+         
+          <h3>Editar perfil</h3>
+          
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label class="col-lg-3 control-label">Nombre de usuario:</label>
+              <div class="col-lg-8">
+                <input class="form-control" type="text" value="Nombre">
               </div>
-              <div class="grid-65">
-                <input type="email" id="email"/>
+            </div>
+           
+            <div class="form-group">
+              <label class="col-lg-3 control-label">Email:</label>
+              <div class="col-lg-8">
+                <input class="form-control" type="text" value="emailuser123@gmail.com">
               </div>
-            </fieldset>
-
-            <fieldset>
-              <div class="grid-35">
-                <label for="password">Contraseña actual</label>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-3 control-label">Contraseña actual:</label>
+              <div class="col-lg-8">
+                <input class="form-control" type="password" value="">
               </div>
-              <div class="grid-65">
-                <input type="password" id="password"/>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-3 control-label">Contraseña nueva:</label>
+              <div class="col-lg-8">
+                <input class="form-control" type="password" value="">
               </div>
-            </fieldset>
-            <fieldset>
-              <div class="grid-35">
-                <label for="password">Contraseña nueva</label>
-              </div>
-              <div class="grid-65">
-                <input type="password" id="newpassword"/>
-              </div>
-            </fieldset>
-
-
-
-            <fieldset>
-              <input type="button" class="Btn cancel" value="Cancelar" />
-              <input type="submit" class="Btn" value="Guardar cambios" />
-            </fieldset>
-            
-    
+            </div>
+            <div class="col-auto my-4">
+              <button type="submit" class="btn btn-warning">Guardar cambios</button>
+          </div>
+            <div id="borrarcuenta" class="col-auto my-4">
+              <h3 style="color:#FFFFFF">Zona peligrosa</h3>
+              <button type="danger" class="btn btn-danger">Eliminar cuenta</button>
+            </div>
           </form>
         </div>
-      </div>
     </div>
+  </div>
+  <hr>
 </body>
 </html>
