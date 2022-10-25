@@ -12,27 +12,23 @@
       <link rel="stylesheet" href="css/menu.css">
 
      <!--Template para que el subir incidencia se vea bien :)  -->
-      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
       
      
 </head>
 <body>
-
+    <!--Navbar-->
     <header>
+        
         <ul class="menu">
-           
             <a href="./menu.html"><img src="images/logos_BA_degrade_VamosBuenosAires_500px_ancho-01.png" alt="BA" id="soyElLogo"/></a>
-
             <li id="menu-flotante">
                 <a href="#">Incidencia</a>
                 <ul class="menu-vertical">
 					<li><a href="./subirincidencia.html">Subir Incidencia</a></li>
-					<li><a href="#">Ver Incidencias</a></li>
-					<li><a href="#">Estadisticas</a></li>
+					<li><a href="./mostrarIncidencia.html">Ver Incidencias</a></li>
 				</ul>
             </li> 
-			
-
 			<li><a href="#">Servicios</a></li>
 			<li><a href="#">Acerca De</a></li>
             <li id="menu-flotante">
@@ -42,19 +38,14 @@
 					<li><a href="#">Configuración</a></li>
 					<li><a href="#">Salir</a></li>
 				</ul>
-            
             </li> 
         </ul>
-
     </header>
-    
-
+    <!--Termina Navbar-->
     <form>
+        <!--Pantalla de Subir Incidencia-->
         <div>
             <h1>Nueva incidencia</h1>
-        
-               
-
                 <div class="form-row">
                     <div class="col-my-4">
                         <label>Titulo</label>
@@ -67,9 +58,7 @@
                           <option value="5">No se puede iniciar sesion</option>
                           <option value="6">Inscribir alumno a materia</option>
                           <option value="otro">Otro</option>
-                        </select>
-                       
-                        
+                        </select>                     
                       </div>
                       <div class="form-group col-my-4" id="elem1" hidden>
                         <label for="Agregartitulo">Nuevo Titulo</label>
@@ -84,21 +73,15 @@
                           <option value="3">Baja</option>                 
                         </select>
                     </div>
-                </div>
-
-               
-        
+                </div>       
                 <div class="col-6 my-2">
                     <label for="exampleFormControlTextarea1">Descripcion</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-    
                 <div class="col-4 my-2">
                     <label class="form-label" for="customFile">Adjuntar archivo</label>
                     <input type="file" class="form-control" id="customFile"/>   
                 </div>
-                
-
                 <div class="col-2 my-2">
                     <label for="inlineFormCustomSelect">Etiquetas (opcional)</label>
                     <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
@@ -111,7 +94,6 @@
                       <option value="6">Valor6</option>
                     </select>
                 </div>
-
                 <div class="col-2 my-2">
                     <label for="inlineFormCustomSelect">Asignar a (opcional)</label>
                     <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
@@ -124,20 +106,16 @@
                       <option value="6">Nombre F</option>
                     </select>
                 </div>
-
                 <div class="col-auto my-4">
                     <button type="submit" class="btn btn-warning">Enviar</button>
                     <button type="reset" class="btn btn-primary">Limpiar</button>
                 </div>
         </div>
     </form>
-
    <script>
    function Otro()
 {
-
     let x = document.getElementById("Opciones").value;
-    
  if (x === "otro") 
    {
     document.getElementById("elem1").hidden = false
@@ -148,9 +126,7 @@ else
         document.getElementById("elem1").hidden = true
         document.getElementById("elem2").hidden = true
     }
-
 }
-
    </script>
 </body>
 </html>
