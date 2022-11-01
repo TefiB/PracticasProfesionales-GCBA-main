@@ -1,0 +1,24 @@
+#incidencia {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #FEFA8F;
+}
+
+#nueva {
+    background-color: #007BFF;
+    color:#FFFFFF;
+}
+#proceso {
+    background-color: #F8BB05;
+    color:#FFFFFF;
+}
+#faltante {
+    background-color: #DC3545;
+    color:#FFFFFF;
+}
+#finalizada {
+    background-color: #28A745;
+    color:#FFFFFF;
+}

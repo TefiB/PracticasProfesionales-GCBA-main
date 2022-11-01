@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>Mostrar Incidencia</title>
+
+    <!--Icon-Font-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js"></script>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/vistaincidencia.css">
+
+    <!--Template para que el subir incidencia se vea bien :)  -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <header>
+
+        <ul class="menu">
+            <a href="./menu.html"><img src="images/logos_BA_degrade_VamosBuenosAires_500px_ancho-01.png" alt="BA"
+                    id="soyElLogo" /></a>
+            <li id="menu-flotante">
+                <a href="#">Incidencia</a>
+                <ul class="menu-vertical">
+                    <li><a href="./subirincidencia.html">Subir Incidencia</a></li>
+                    <li><a href="./mostrarIncidencia.html">Ver Incidencias</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="./sobrenosotros.html">Sobre nosotros</a></li>
+            <li id="menu-flotante">
+                <a href="#">Admin/User</a>
+                <ul class="menu-vertical">
+                    <li><a href="./editarperfil.html" id="editar-perfil">Editar Perfil</a></li>
+                    <li><a href="#">Configuración</a></li>
+                    <li><a href="#">Salir</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <!--Termina Navbar-->
+    <br>
+    <br>
+    <br>
+    <div class="col-auto my-4">
+        <a href="./mostrarIncidencia.html" class="button">Atras</a>
+    </div>
+    <!--Pantalla de Incidencia-->
+    <div id="incidencia">
+
+        <div id="nueva" hidden>
+            <h2>Nueva</h2>
+        </div>
+        <div id="proceso" hidden>
+            <h2>En proceso</h2>
+        </div>
+        <div id="faltante" hidden>
+            <h2>Faltante de datos</h2>
+        </div>
+        <div id="finalizada" hidden>
+            <h2>Finalizada</h2>
+        </div>
+
+
+        <div class="col-6 my-2" id="titulo">
+            <tr>
+                <th>
+                    <h1>Titulo card</h1>
+                </th>
+                <td>Prioridad:</td>
+                <td>Alta</td>
+            </tr>
+        </div>
+        <div class="col-6 my-2" id="fecha">
+            <tr>
+                <th>Fecha de envio:</th>
+                <td>1/11/2022 20:30</td>
+            </tr>
+        </div>
+        <div class="col-6 my-2" id="informador">
+            <tr>
+                <th>Enviado por:</th>
+                <td><a href="#">IFTS N°11</a></td>
+            </tr>
+        </div>
+        <div class="col-6 my-2" id="prioridad">
+            <tr>
+                <th>Prioridad:</th>
+                <td>Alta</td>
+            </tr>
+        </div>
+        <div class="col-6 my-2" id="descripcion">
+            <tr>
+                <th>Descripcion:</th>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto amet, totam consequatur
+                    repellendus officia, reprehenderit nihil impedit laudantium labore nobis eum ullam magni ipsam non
+                    id enim alias? Facilis, obcaecati?</td>
+            </tr>
+        </div>
+        <div class="col-6 my-2" id="etiquetas">
+            <tr>
+                <th>Etiquetas:</th>
+                <td></td>
+            </tr>
+        </div>
+        <div class="col-6 my-2" id="asignadoa">
+            <tr>
+                <th>Asignado a:</th>
+                <td><a href="#">Hernan Visconti</a></td>
+            </tr>
+        </div>
+        <div class="col-6 my-2" id="archivo">
+            <tr>
+                <th>Archivos adjuntos:</th>
+                <td></td>
+            </tr>
+        </div>
+        <br>
+        <div class="col-auto my-4">
+
+            <tr>
+                <th>Estado:</th>
+                <td><select name="new_status" class="input-sm" id="Estados" onchange="Estado();">
+                        <option value="0" selected="selected"></option>
+                        <option value="10">Nueva</option>
+                        <option value="20">En proceso</option>
+                        <option value="30">Faltantes de datos</option>
+                        <option value="40">Finalizada</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <th>Asignar a:</th>
+                <td><select class="input-sm" name="handler_id">
+                        <option value="0"></option>
+                        <option value="1">Jorge Dominguez</option>
+                        <option value="2">Hernan Visconti</option>
+                        <option value="3">Debora</option>
+                    </select></td>
+            </tr>
+            <button type="submit" class="btn btn-primary">Guardar cambios</button>
+            <button type="submit" class="btn btn-danger">Enviar a papelera</button>
+        </div>
+    </div>
+    <form>
+        <div>
+            <div class="col-6 my-2" id="comentario">
+                <label for="comentario">Comentario</label>
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <div class="col-4 my-2">
+                <label class="form-label" for="customFile">Adjuntar archivo</label>
+                <input type="file" class="form-control" id="customFile" />
+            </div>
+            <div class="col-4 my-2">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+
+        </div>
+    </form>
+
+
+
+    <script>
+        function Estado() {
+            let x = document.getElementById("Estados").value;
+            if (x === "10") {
+                document.getElementById("nueva").hidden = false
+                document.getElementById("proceso").hidden = true
+                document.getElementById("faltante").hidden = true
+                document.getElementById("finalizada").hidden = true
+            }
+            if (x === "20") {
+                document.getElementById("proceso").hidden = false
+                document.getElementById("nueva").hidden = true
+                document.getElementById("faltante").hidden = true
+                document.getElementById("finalizada").hidden = true
+            }
+            if (x === "30") {
+                document.getElementById("faltante").hidden = false
+                document.getElementById("proceso").hidden = true
+                document.getElementById("nueva").hidden = true
+                document.getElementById("finalizada").hidden = true
+            }
+            if (x === "40") {
+                document.getElementById("finalizada").hidden = false
+                document.getElementById("proceso").hidden = true
+                document.getElementById("nueva").hidden = true
+                document.getElementById("faltante").hidden = true
+            }
+            if (x === "0") {
+                document.getElementById("finalizada").hidden = true
+                document.getElementById("proceso").hidden = true
+                document.getElementById("nueva").hidden = true
+                document.getElementById("faltante").hidden = true
+            }
+
+        }
+    </script>
+</body>
+
+</html>
