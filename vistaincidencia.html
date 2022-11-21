@@ -27,149 +27,160 @@
             <a href="./menu.html"><img src="images/logos_BA_degrade_VamosBuenosAires_500px_ancho-01.png" alt="BA"
                     id="soyElLogo" /></a>
             <li id="menu-flotante">
-                <a href="#">Incidencia</a>
+                <a href="#"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Incidencia</a>
                 <ul class="menu-vertical">
-                    <li><a href="./subirincidencia.html">Subir Incidencia</a></li>
-                    <li><a href="./mostrarIncidencia.html">Ver Incidencias</a></li>
+                    <li><a href="./subirincidencia.html"><i class="fa fa-upload" aria-hidden="true"></i> Subir
+                            Incidencia</a></li>
+                    <li><a href="./mostrarIncidencia.html"><i class="fa fa-eye" aria-hidden="true"></i> Ver
+                            Incidencias</a></li>
                 </ul>
             </li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="./sobrenosotros.html">Sobre nosotros</a></li>
             <li id="menu-flotante">
-                <a href="#">Admin/User</a>
+                <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>Admin/User</a>
                 <ul class="menu-vertical">
-                    <li><a href="./editarperfil.html" id="editar-perfil">Editar Perfil</a></li>
-                    <li><a href="#">Configuración</a></li>
-                    <li><a href="#">Salir</a></li>
+                    <li><a href="./editarperfil.html" id="editar-perfil"><i class="fa fa-id-card-o"
+                                aria-hidden="true"></i> Editar Perfil</a></li>
+                    <li><a href="#"><i class="fa fa-wrench" aria-hidden="true"></i> Configuración</a></li>
+                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Salir</a></li>
                 </ul>
             </li>
+            <li><a href="./sobrenosotros.html"><i class="fa fa-users" aria-hidden="true"></i> Sobre nosotros</a></li>
         </ul>
     </header>
     <!--Termina Navbar-->
-    <br>
-    <br>
-    <br>
-    <div class="col-auto my-4">
-        <a href="./mostrarIncidencia.html" class="button">Atras</a>
-    </div>
-    <!--Pantalla de Incidencia-->
-    <div id="incidencia">
-
-        <div id="nueva" hidden>
-            <h2>Nueva</h2>
-        </div>
-        <div id="proceso" hidden>
-            <h2>En proceso</h2>
-        </div>
-        <div id="faltante" hidden>
-            <h2>Faltante de datos</h2>
-        </div>
-        <div id="finalizada" hidden>
-            <h2>Finalizada</h2>
-        </div>
-
-
-        <div class="col-6 my-2" id="titulo">
-            <tr>
-                <th>
-                    <h1>Titulo card</h1>
-                </th>
-                <td>Prioridad:</td>
-                <td>Alta</td>
-            </tr>
-        </div>
-        <div class="col-6 my-2" id="fecha">
-            <tr>
-                <th>Fecha de envio:</th>
-                <td>1/11/2022 20:30</td>
-            </tr>
-        </div>
-        <div class="col-6 my-2" id="informador">
-            <tr>
-                <th>Enviado por:</th>
-                <td><a href="#">IFTS N°11</a></td>
-            </tr>
-        </div>
-        <div class="col-6 my-2" id="prioridad">
-            <tr>
-                <th>Prioridad:</th>
-                <td>Alta</td>
-            </tr>
-        </div>
-        <div class="col-6 my-2" id="descripcion">
-            <tr>
-                <th>Descripcion:</th>
-                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto amet, totam consequatur
-                    repellendus officia, reprehenderit nihil impedit laudantium labore nobis eum ullam magni ipsam non
-                    id enim alias? Facilis, obcaecati?</td>
-            </tr>
-        </div>
-        <div class="col-6 my-2" id="etiquetas">
-            <tr>
-                <th>Etiquetas:</th>
-                <td></td>
-            </tr>
-        </div>
-        <div class="col-6 my-2" id="asignadoa">
-            <tr>
-                <th>Asignado a:</th>
-                <td><a href="#">Hernan Visconti</a></td>
-            </tr>
-        </div>
-        <div class="col-6 my-2" id="archivo">
-            <tr>
-                <th>Archivos adjuntos:</th>
-                <td></td>
-            </tr>
-        </div>
+    <div class="fondo">
         <br>
-        <div class="col-auto my-4">
 
-            <tr>
-                <th>Estado:</th>
-                <td><select name="new_status" class="input-sm" id="Estados" onchange="Estado();">
-                        <option value="0" selected="selected"></option>
-                        <option value="10">Nueva</option>
+        <!--Pantalla de Incidencia-->
+        <div id="incidencia">
+
+            <div id="nueva" hidden>
+                <h2>Nueva</h2>
+            </div>
+            <div id="proceso" hidden>
+                <h2>En proceso</h2>
+            </div>
+            <div id="faltante" hidden>
+                <h2>Faltante de datos</h2>
+            </div>
+            <div id="finalizada" hidden>
+                <h2>Finalizada</h2>
+            </div>
+
+
+            <div class="col-6 my-2" id="titulo">
+                <tr>
+                    <th>
+                        <h1>Titulo card</h1>
+                    </th>
+                    <h2>
+                        <td>Nivel de prioridad:</td>
+                        <td>Alta <i class="fa fa-angle-double-up" aria-hidden="true"></i></td>
+                    </h2>
+                    <!--<td>Media <i class="fa fa-angle-double-up" aria-hidden="true"></i></td></h2>-->
+                    <!--<td>Baja <i class="fa fa-angle-double-up" aria-hidden="true"></i></td></h2>-->
+                </tr>
+            </div>
+            <div class="col-6 my-2" id="fecha">
+                <tr>
+                    <th><label>Fecha de envio:</label></th>
+                    <td>1/11/2022 20:30</td>
+                </tr>
+            </div>
+            <div class="col-6 my-2" id="informador">
+                <tr>
+                    <th><label>Enviado por:</label></th>
+                    <td><a href="#">IFTS N°11</a></td>
+                </tr>
+            </div>
+            <div class="col-6 my-2" id="descripcion">
+                <tr>
+                    <th><label>Descripcion:</label></th>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto amet, totam consequatur
+                        repellendus officia, reprehenderit nihil impedit laudantium labore nobis eum ullam magni ipsam
+                        non
+                        id enim alias? Facilis, obcaecati?</td>
+                </tr>
+            </div>
+            <div class="col-6 my-2" id="etiquetas">
+                <tr>
+                    <th><label>Etiquetas:</label></th>
+                    <td></td>
+                </tr>
+            </div>
+            <div class="col-6 my-2" id="asignadoa">
+                <tr>
+                    <th><label>Asignado a:</label></th>
+                    <td><a href="#">Hernan Visconti</a></td>
+                </tr>
+            </div>
+            <div class="col-6 my-2" id="archivo">
+                <tr>
+                    <th><label>Archivos adjuntos:</label></th>
+                    <td></td>
+                </tr>
+            </div>
+            <br>  
+        </div>
+        <div class="col-auto  estadocard">
+            <div class="form-row">
+                <div class="col-2 my-1">
+                    <label for="inlineFormCustomSelect">Cambiar estado:</label>
+                    <select name="new_status" class="custom-select mr-sm-2" id="estados" onchange="Estado();">
+                        <option value="0"></option>
+                        <option value="10" selected="selected">Nueva</option>
                         <option value="20">En proceso</option>
                         <option value="30">Faltantes de datos</option>
                         <option value="40">Finalizada</option>
-                    </select></td>
-            </tr>
-            <tr>
-                <th>Asignar a:</th>
-                <td><select class="input-sm" name="handler_id">
-                        <option value="0"></option>
-                        <option value="1">Jorge Dominguez</option>
-                        <option value="2">Hernan Visconti</option>
-                        <option value="3">Debora</option>
-                    </select></td>
-            </tr>
-            <button type="submit" class="btn btn-primary">Guardar cambios</button>
-            <button type="submit" class="btn btn-danger">Enviar a papelera</button>
-        </div>
-    </div>
-    <form>
-        <div>
-            <div class="col-6 my-2" id="comentario">
-                <label for="comentario">Comentario</label>
-                <textarea class="form-control" rows="3"></textarea>
-            </div>
-            <div class="col-4 my-2">
-                <label class="form-label" for="customFile">Adjuntar archivo</label>
-                <input type="file" class="form-control" id="customFile" />
-            </div>
-            <div class="col-4 my-2">
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                    </select>
+                </div>
+                <div class="col-2 my-1">
+                    <label for="inlineFormCustomSelect">Asignar a:</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>Seleccione...</option>
+                        <option value="1">Hernan Visconti</option>
+                        <option value="2">Jorge Dominguez</option>
+                        <option value="3">Debora </option>
+                        <option value="4">Operador D</option>
+                        <option value="5">Operador E</option>
+                        <option value="6">Operador F</option>
+                    </select>
+                </div>
+                <div class="col-auto my-4">
+                    <button type="submit" class="enviar"><i class="fa fa-floppy-o" aria-hidden="true"></i>
+                        Guardar cambios</button>
+                    <button type="reset" class="limpiar"><i class="fa fa-trash" aria-hidden="true"></i>
+                        Enviar a papelera</button>
+                </div>
             </div>
 
+
+            
+
         </div>
-    </form>
+        <form class="comentarios">
+            <div>
+                <div class="col-6 my-2" id="comentario">
+                    <label for="comentario">Comentario</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <div class="col-4 my-2">
+                    <label class="form-label" for="customFile">Adjuntar archivo</label>
+                    <input type="file" class="form-control" id="customFile" />
+                </div>
+                <div class="col-4 my-2">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+                <br>
+            </div>
+        </form>
+    </div>
 
 
 
     <script>
         function Estado() {
-            let x = document.getElementById("Estados").value;
+            let x = document.getElementById("estados").value;
             if (x === "10") {
                 document.getElementById("nueva").hidden = false
                 document.getElementById("proceso").hidden = true
@@ -202,6 +213,7 @@
             }
 
         }
+        Estado()
     </script>
 </body>
 

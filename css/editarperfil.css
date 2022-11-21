@@ -1,11 +1,50 @@
-body{margin-top:20px;}
-.avatar{
-width:200px;
-height:200px;
-}	
+body {
+  margin-top: 20px;
+}
 
-#borrarcuenta
-{
+.avatar {
+  width: 200px;
+  height: 200px;
+}
+
+#borrarcuenta {
   background-color: black;
+
+}
+
+.editar {
+  padding: 10px;
+  margin: 50px;
+  background-color: rgba(157, 156, 188, 0.602);
+
+}
+
+.fondo {
+  background: #302f2a;
+}
+
+label {
+  color: #FCDA59;
+  font-weight: bold;
+  text-decoration: underline #FCDA59;
+}
+
+.titulo {
+  color: #FCDA59;
+  font-weight: bold;
+}
+
+.guardar {
+  background-color: #6462e2;
+  border-color: #6462e2;
+  border-radius: 12px;
+  padding: 15px 50px;
   
+  transition-duration: 0.4s;
+}
+
+.guardar:hover {
+  background-color: #8cb3fc;
+  color: #226a89;
+  box-shadow: 0 0px 16px 0 #8cb3fc;
 }

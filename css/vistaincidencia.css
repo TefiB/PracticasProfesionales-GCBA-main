@@ -1,24 +1,82 @@
 #incidencia {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: #FEFA8F;
+    padding: 0px;
+    margin: 10px;
+    background-color: rgba(157, 156, 188, 0.602);
+   
+
 }
 
 #nueva {
     background-color: #007BFF;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
+
 #proceso {
     background-color: #F8BB05;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
+
 #faltante {
     background-color: #DC3545;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
+
 #finalizada {
     background-color: #28A745;
-    color:#FFFFFF;
+    color: #FFFFFF;
+}
+
+.fondo {
+    background: #302f2a;
+}
+
+/*.comentarios {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(238, 197, 197, 0.602);
+ 
+}*/
+
+.estadocard {
+    background-color: rgba(175, 172, 254, 0.602);
+    padding: 0px;
+    margin: 10px;
+    
+   /* text-align: center;*/
+    
+}
+
+.enviar {
+    background-color: #6462e2;
+    border-color: #6462e2;
+    border-radius: 12px;
+    padding: 15px 50px;
+    
+    transition-duration: 0.4s;
+}
+
+.enviar:hover {
+    background-color: #8cb3fc;
+    color: #226a89;
+    box-shadow: 0 0px 16px 0 #8cb3fc;
+}
+
+.limpiar {
+    background-color: #686161;
+    border-color: #686161;
+    border-radius: 12px;
+    padding: 15px 50px;
+   
+    transition-duration: 0.4s;
+    
+}
+
+.limpiar:hover {
+    background-color: #d77d7d;
+    color: #85155a;
+    box-shadow: 0 0px 16px 0 #d77d7d;
+}
+
+label{
+    font-weight: bold;
 }

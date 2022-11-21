@@ -1,73 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Perfil</title>
 
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/editarperfil.css">
-    
-    <!--Icon-Font-->
-    <script src="https://kit.fontawesome.com/eb496ab1a0.js" ></script>
-    <!--Stylesheet que mejora lo visual-->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Perfil</title>
+
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/editarperfil.css">
+
+  <!--Icon-Font-->
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js"></script>
+  <!--Stylesheet que mejora lo visual-->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 </head>
+
 <body>
-<!--Navbar-->
-<header>    
-  <ul class="menu">
-      <a href="./menu.html"><img src="images/logos_BA_degrade_VamosBuenosAires_500px_ancho-01.png" alt="BA" id="soyElLogo"/></a>
+  <!--Navbar-->
+  <header>
+
+    <ul class="menu">
+      <a href="./menu.html"><img src="images/logos_BA_degrade_VamosBuenosAires_500px_ancho-01.png" alt="BA"
+          id="soyElLogo" /></a>
       <li id="menu-flotante">
-          <a href="#">Incidencia</a>
-          <ul class="menu-vertical">
-    <li><a href="./subirincidencia.html">Subir Incidencia</a></li>
-    <li><a href="./mostrarIncidencia.html">Ver Incidencias</a></li>
-  </ul>
-      </li> 
-<li><a href="#">Servicios</a></li>
-<li><a href="./sobrenosotros.html">Sobre nosotros</a></li>
+        <a href="#"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Incidencia</a>
+        <ul class="menu-vertical">
+          <li><a href="./subirincidencia.html"><i class="fa fa-upload" aria-hidden="true"></i> Subir
+              Incidencia</a></li>
+          <li><a href="./mostrarIncidencia.html"><i class="fa fa-eye" aria-hidden="true"></i> Ver
+              Incidencias</a></li>
+        </ul>
+      </li>
       <li id="menu-flotante">
-          <a href="#">Admin/User</a>
-          <ul class="menu-vertical">
-    <li><a href="./editarperfil.html" id="editar-perfil">Editar Perfil</a></li>
-    <li><a href="#">Configuración</a></li>
-    <li><a href="#">Salir</a></li>
-  </ul>
-      </li> 
-  </ul>
-</header>
-<!--Termina Navbar-->   
-    <div class="container bootstrap snippets bootdey">
+        <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>Admin/User</a>
+        <ul class="menu-vertical">
+          <li><a href="./editarperfil.html" id="editar-perfil"><i class="fa fa-id-card-o" aria-hidden="true"></i> Editar
+              Perfil</a></li>
+          <li><a href="#"><i class="fa fa-wrench" aria-hidden="true"></i> Configuración</a></li>
+          <li><a href="./login.html"><i class="fa fa-sign-out" aria-hidden="true"></i> Salir</a></li>
+        </ul>
+      </li>
+      <li><a href="./sobrenosotros.html"><i class="fa fa-users" aria-hidden="true"></i> Sobre nosotros</a></li>
+    </ul>
+  </header>
+  <!--Termina Navbar-->
+  <div class="fondo">
+    <br>
+  <form class="editar">
+    <div class="container">
       <br>
-      <br>
-      <br>
-      <br>
-      <br>
-    <div class="row">
+      <div class="row">
         <!-- left column -->
         <div class="col-md-3">
           <div class="text-center">
-            <img src="https://www.nicepng.com/png/detail/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png" class="avatar img-circle img-thumbnail" alt="avatar">
-            
+            <img
+              src="https://www.nicepng.com/png/detail/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png"
+              class="avatar img-circle img-thumbnail" alt="avatar">
+
             <input type="file" class="form-control">
           </div>
-        </div>    
+        </div>
         <!-- edit form column -->
         <div class="col-md-9 personal-info">
-          <h3>Editar perfil</h3>      
+          <h3 class="titulo">Editar perfil</h3>
           <form class="form-horizontal" role="form">
             <div class="form-group">
               <label class="col-lg-3 control-label">Nombre de usuario:</label>
               <div class="col-lg-8">
-                <input class="form-control" type="text" value="Nombre">
+                <input class="form-control" type="text" placeholder="Nombre">
               </div>
-            </div>         
+            </div>
             <div class="form-group">
               <label class="col-lg-3 control-label">Email:</label>
               <div class="col-lg-8">
-                <input class="form-control" type="text" value="emailuser123@gmail.com">
+                <input class="form-control" type="text" placeholder="emailuser123@gmail.com">
               </div>
             </div>
             <div class="form-group">
@@ -83,16 +90,24 @@
               </div>
             </div>
             <div class="col-auto my-4">
-              <button type="submit" class="btn btn-warning">Guardar cambios</button>
-          </div>
-          <!---<div id="borrarcuenta" class="col-auto my-4">
-              <h3 style="color:#FFFFFF">Zona peligrosa</h3>
-              <button type="danger" class="btn btn-danger">Eliminar cuenta</button>
-            </div>-->
+              <button type="submit" class="guardar"><i class="fa fa-floppy-o" aria-hidden="true"></i>
+                Guardar cambios</button>
+            </div>
+            
+            <!---<div id="borrarcuenta" class="col-auto my-4">
+                <h3 style="color:#FFFFFF">Zona peligrosa</h3>
+                <button type="danger" class="btn btn-danger">Eliminar cuenta</button>
+              </div>-->
           </form>
         </div>
+      </div>
     </div>
+  </form>
+  <br>
+  <br>
   </div>
-  <hr>
+
+
 </body>
+
 </html>

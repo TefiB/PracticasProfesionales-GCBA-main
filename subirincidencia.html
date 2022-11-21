@@ -1,131 +1,155 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <title>Subir Incidencia</title>
 
-      <!--Icon-Font-->
-      <script src="https://kit.fontawesome.com/eb496ab1a0.js" ></script>
-      <link rel="stylesheet" href="css/menu.css">
+    <!--Icon-Font-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js"></script>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/subirincidencia.css">
 
-     <!--Template para que el subir incidencia se vea bien :)  -->
-      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-      
-     
+    <!--Template para que el subir incidencia se vea bien :)  -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <!--Stylesheet para los iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
+
 <body>
     <!--Navbar-->
     <header>
-        
+
         <ul class="menu">
-            <a href="./menu.html"><img src="images/logos_BA_degrade_VamosBuenosAires_500px_ancho-01.png" alt="BA" id="soyElLogo"/></a>
+            <a href="./menu.html"><img src="images/logos_BA_degrade_VamosBuenosAires_500px_ancho-01.png" alt="BA"
+                    id="soyElLogo" /></a>
             <li id="menu-flotante">
-                <a href="#">Incidencia</a>
+                <a href="#"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Incidencia</a>
                 <ul class="menu-vertical">
-					<li><a href="./subirincidencia.html">Subir Incidencia</a></li>
-					<li><a href="./mostrarIncidencia.html">Ver Incidencias</a></li>
-				</ul>
-            </li> 
-			<li><a href="#">Servicios</a></li>
-			<li><a href="./sobrenosotros.html">Sobre nosotros</a></li>
+                    <li><a href="./subirincidencia.html"><i class="fa fa-upload" aria-hidden="true"></i> Subir
+                            Incidencia</a></li>
+                    <li><a href="./mostrarIncidencia.html"><i class="fa fa-eye" aria-hidden="true"></i> Ver
+                            Incidencias</a></li>
+                </ul>
+            </li>
             <li id="menu-flotante">
-                <a href="#">Admin/User</a>
+                <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>Admin/User</a>
                 <ul class="menu-vertical">
-					<li><a href="./editarperfil.html" id="editar-perfil">Editar Perfil</a></li>
-					<li><a href="#">Configuración</a></li>
-					<li><a href="#">Salir</a></li>
-				</ul>
-            </li> 
+                    <li><a href="./editarperfil.html" id="editar-perfil"><i class="fa fa-id-card-o"
+                                aria-hidden="true"></i> Editar Perfil</a></li>
+                    <li><a href="#"><i class="fa fa-wrench" aria-hidden="true"></i> Configuración</a></li>
+                    <li><a href="./login.html"><i class="fa fa-sign-out" aria-hidden="true"></i> Salir</a></li>
+                </ul>
+            </li>
+            <li><a href="./sobrenosotros.html"><i class="fa fa-users" aria-hidden="true"></i> Sobre nosotros</a></li>
         </ul>
     </header>
     <!--Termina Navbar-->
-    <form>
-        <!--Pantalla de Subir Incidencia-->
-        <div>
-            <h1>Nueva incidencia</h1>
+
+    <!--Pantalla de Subir Incidencia-->
+    <div class="fondo">
+        <div class="incidencia">
+            <hr>
+            <hr>
+            <form class="formulario">
+
+                <h1 class="titulo">Nueva incidencia</h1>
                 <div class="form-row">
                     <div class="col-my-4">
                         <label>Titulo</label>
                         <select class="custom-select mr-sm-2" id="Opciones" onchange="Otro();">
-                          <option selected>Seleccione...</option>
-                          <option value="1">Cierre de actas</option>
-                          <option value="2">Agregar alumno</option>
-                          <option value="3">Agregar profesor</option>
-                          <option value="4">Agregar bedel</option>
-                          <option value="5">No se puede iniciar sesion</option>
-                          <option value="6">Inscribir alumno a materia</option>
-                          <option value="otro">Otro</option>
-                        </select>                     
-                      </div>
-                      <div class="form-group col-my-4" id="elem1" hidden>
-                        <label for="Agregartitulo">Nuevo Titulo</label>
-                        <input type="text" class="form-control" id="Agregartitulo" >
-                      </div>
-                      <div class="form-group col-my-2" id="elem2" hidden>
-                        <label for="nvlprioridad">Nivel de prioridad</label>
-                        <select id="nvlprioridad" class="form-control">
-                          <option selected>Seleccione...</option>
-                          <option value="1">Alta</option>
-                          <option value="2">Media</option>
-                          <option value="3">Baja</option>                 
+                            <option selected>Seleccione...</option>
+                            <option value="1">Cierre de actas</option>
+                            <option value="2">Agregar alumno</option>
+                            <option value="3">Agregar profesor</option>
+                            <option value="4">Agregar bedel</option>
+                            <option value="5">No se puede iniciar sesion</option>
+                            <option value="6">Inscribir alumno a materia</option>
+                            <option value="otro">Otro</option>
                         </select>
                     </div>
-                </div>       
-                <div class="col-6 my-2">
+                    <div class="form-group col-my-4" id="elem1" hidden>
+                        <label for="Agregartitulo">Nuevo Titulo</label>
+                        <input type="text" class="form-control" id="Agregartitulo">
+                    </div>
+                    <div class="form-group col-my-2" id="elem2" hidden>
+                        <label for="nvlprioridad">Nivel de prioridad</label>
+                        <select id="nvlprioridad" class="form-control">
+                            <option selected>Seleccione...</option>
+                            <option value="1">Alta <i class="fa fa-angle-double-up" aria-hidden="true"></i></option>
+                            <option value="2" >Media</option>
+                            <option value="3">Baja</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-auto my-2">
                     <label for="exampleFormControlTextarea1">Descripcion</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
                 </div>
-                <div class="col-4 my-2">
+                <div class="col-auto my-2">
                     <label class="form-label" for="customFile">Adjuntar archivo</label>
-                    <input type="file" class="form-control" id="customFile"/>   
+                    <input type="file" class="form-control" id="customFile" />
                 </div>
-                <div class="col-2 my-2">
+                <hr class="separador">
+                <div class="col-auto my-2">
                     <label for="inlineFormCustomSelect">Etiquetas (opcional)</label>
                     <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                      <option selected>Seleccione...</option>
-                      <option value="1">Valor1</option>
-                      <option value="2">Valor2</option>
-                      <option value="3">Valor3 </option>
-                      <option value="4">Valor4</option>
-                      <option value="5">Valor5</option>
-                      <option value="6">Valor6</option>
+                        <option selected>Seleccione...</option>
+                        <option value="1">Valor1</option>
+                        <option value="2">Valor2</option>
+                        <option value="3">Valor3 </option>
+                        <option value="4">Valor4</option>
+                        <option value="5">Valor5</option>
+                        <option value="6">Valor6</option>
                     </select>
                 </div>
-                <div class="col-2 my-2">
+                <div class="col-auto my-2">
                     <label for="inlineFormCustomSelect">Asignar a (opcional)</label>
                     <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                      <option selected>Seleccione...</option>                  
-                      <option value="1">Nombre A</option>
-                      <option value="2">Nombre B</option>
-                      <option value="3">Nombre C </option>
-                      <option value="4">Nombre D</option>
-                      <option value="5">Nombre E</option>
-                      <option value="6">Nombre F</option>
+                        <option selected>Seleccione...</option>
+                        <option value="1">Hernan Visconti</option>
+                        <option value="2">Jorge Dominguez</option>
+                        <option value="3">Debora </option>
+                        <option value="4">Operador D</option>
+                        <option value="5">Operador E</option>
+                        <option value="6">Operador F</option>
                     </select>
                 </div>
                 <div class="col-auto my-4">
-                    <button type="submit" class="btn btn-warning">Enviar</button>
-                    <button type="reset" class="btn btn-primary">Limpiar</button>
+                    <button type="submit" class="enviar"><i class="fa fa-paper-plane" aria-hidden="true"></i>
+                        Enviar</button>
+                    <button type="reset" class="limpiar"><i class="fa fa-eraser" aria-hidden="true"></i>
+                        Limpiar</button>
                 </div>
+            </form>
         </div>
-    </form>
-   <script>
-   function Otro()
-{
-    let x = document.getElementById("Opciones").value;
- if (x === "otro") 
-   {
-    document.getElementById("elem1").hidden = false
-    document.getElementById("elem2").hidden = false
-    } 
-else 
-    {
-        document.getElementById("elem1").hidden = true
-        document.getElementById("elem2").hidden = true
-    }
-}
-   </script>
+
+    </div>
+
+
+    <script>
+        function Otro() {
+            let x = document.getElementById("Opciones").value;
+            if (x === "otro") {
+                document.getElementById("elem1").hidden = false
+                document.getElementById("elem2").hidden = false
+            }
+            else {
+                document.getElementById("elem1").hidden = true
+                document.getElementById("elem2").hidden = true
+            }
+        }
+    </script>
+
+
+
+
+
 </body>
+
 </html>

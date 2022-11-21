@@ -1,51 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Menú Principal</title>
     <link rel="stylesheet" href="css/menu.css">
     <!--Icon-Font-->
-    <script src="https://kit.fontawesome.com/eb496ab1a0.js" ></script>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js"></script>
     <!--Stylesheet que mejora lo visual-->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!--Stylesheet para los iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <!--Navbar-->
     <header>
-        
+
         <ul class="menu">
-            <a href="./menu.html"><img src="images/logos_BA_degrade_VamosBuenosAires_500px_ancho-01.png" alt="BA" id="soyElLogo"/></a>
+            <a href="./menu.html"><img src="images/logos_BA_degrade_VamosBuenosAires_500px_ancho-01.png" alt="BA"
+                    id="soyElLogo" /></a>
             <li id="menu-flotante">
-                <a href="#">Incidencia</a>
+                <a href="#"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Incidencia</a>
                 <ul class="menu-vertical">
-					<li><a href="./subirincidencia.html">Subir Incidencia</a></li>
-					<li><a href="./mostrarIncidencia.html">Ver Incidencias</a></li>
-				</ul>
-            </li> 
-			<li><a href="#">Servicios</a></li>
-			<li><a href="./sobrenosotros.html">Sobre nosotros</a></li>
+                    <li><a href="./subirincidencia.html"><i class="fa fa-upload" aria-hidden="true"></i> Subir Incidencia</a></li>
+                    <li><a href="./mostrarIncidencia.html"><i class="fa fa-eye" aria-hidden="true"></i> Ver Incidencias</a></li>
+                </ul>
+            </li>
             <li id="menu-flotante">
-                <a href="#">Admin/User</a>
+                <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>Admin/User</a>
                 <ul class="menu-vertical">
-					<li><a href="./editarperfil.html" id="editar-perfil">Editar Perfil</a></li>
-					<li><a href="#">Configuración</a></li>
-					<li><a href="#">Salir</a></li>
-				</ul>
-            </li> 
+                    <li><a href="./editarperfil.html" id="editar-perfil"><i class="fa fa-id-card-o" aria-hidden="true"></i> Editar Perfil</a></li>
+                    <li><a href="#"><i class="fa fa-wrench" aria-hidden="true"></i> Configuración</a></li>
+                    <li><a href="./login.html"><i class="fa fa-sign-out" aria-hidden="true"></i> Salir</a></li>
+                </ul>
+            </li>
+            <li><a href="./sobrenosotros.html"><i class="fa fa-users" aria-hidden="true"></i> Sobre nosotros</a></li>
         </ul>
     </header>
-    <!--Termina Navbar-->
-    <div class="container-flotantes">
-        <input type="checkbox" id="btn-mas">
-        <div class="opciones">
-            <a href="#">.</a>
-            <a href="#">.</a>
-            <a href="#" title="Ver ticket">V</a>
-            <a href="#" title="Levantar ticket">L</a>
-        </div>
-        <div class="btn-mas">
-            <label for="btn-mas" class="fa fa-plus"></label>
-        </div>
-    </div>
 </body>
+
 </html>

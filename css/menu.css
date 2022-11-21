@@ -1,3 +1,4 @@
+/*Necesario*/
 *{
     margin: 0;
     padding: 0;
@@ -5,20 +6,20 @@
 }
 
 
-#btn-mas{
+/*#btn-mas{
     display: none;
     position:absolute;
     right: 10px;
     bottom: 10px;    
-}
+}*/
 
-.container-flotantes{
+/*.container-flotantes{
     position: fixed;
     bottom: 20px;
     right: 20px;   
-}
+}*/
 
-.opciones a, .btn-mas label{
+/*.opciones a, .btn-mas label{
     display: block;
     text-decoration: none;
     background-color: #f54789;
@@ -30,39 +31,39 @@
     border-radius: 50%;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
     transition: all 500ms ease;
-}
+}*/
 
-.opciones a:hover{
+/*.opciones a:hover{
     background: #f5f5f5;
     color: #f54789;
-}
+}*/
 
-.opciones a{
+/*.opciones a{
     margin-bottom: -15px;
     opacity: 0;
     visibility: hidden;
     font-family: "OpenSans", Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-size: 26px;   
-}
+}*/
 
-#btn-mas:checked~ .opciones a{
+/*#btn-mas:checked~ .opciones a{
     margin-bottom: 10px;
     opacity: 1;
     visibility: visible; 
-}
+}*/
 
-.btn-mas label{
+/*.btn-mas label{
     cursor: pointer;
     background: #f54789;
     font-size: 23px;
-}
+}*/
 
-#btn-mas:checked ~ .btn-mas label{
+/*#btn-mas:checked ~ .btn-mas label{
     transform: rotate(135deg);
     font-size: 25px;
-}
-
+}*/
+/*Necesario*/
 .menu{
 	list-style: none;
 	padding: 0;
@@ -71,27 +72,23 @@
 	margin: auto;
     text-align: right;
     border-top: 6px #fdd306 solid;
-   
 }
-
+/*Necesario*/
 .menu li a{
 	text-decoration: none;
-	color: black;
+	color: #645723;
+    font-weight: bold;
 	padding: 20px;
 	display: block;
 }
-
+/*Necesario*/
 .menu li{
 	display: inline-block;
 	text-align: center;
 }
-
+/*Necesario*/
 .menu li:hover{
-    background-color: #f54789;
-}
-
-.menu li a:hover{
-	background: #e5e5e5; 
+    background-color: #FCDA59;
 }
 
 #soyElLogo{
@@ -103,27 +100,31 @@
     height: 40px;
 }
 
+/*Necesario*/
 .menu-vertical{
     position: fixed;
     display: none;
     list-style: none;
-    width: 200px;
-    background-color: #f54789;
+    width: 19%;
+    background-color: #FCDA59;
 }
-
+/*Necesario*/
 .menu li:hover .menu-vertical{
     display: block;
 }
 
 .menu-vertical li:hover{
     background-color: #332;
+    width: 100%;
+    list-style: none;
+    
 }
 
 .menu-vertical li a{
     display: block;
-    color: black;
-    padding: 7px 148px 8px 23px;
-    text-decoration: none;
+    color: #7C736D;
+    padding: 10px 100px 10px 5px;
+    text-align: left;
 }
 
 #editar-perfil {
@@ -140,3 +141,5 @@ header{
     background-color: #fdd306;
 
 }
+
+
